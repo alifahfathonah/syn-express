@@ -1,4 +1,5 @@
 @media (max-width: 992px) {
+
     /* body{
     margin-bottom: 400px;
 } */
@@ -6,6 +7,7 @@
     #header .navbar-expand-lg {
         background: #628BFC;
     }
+
     #header .nav-link,
     #headerlayanankami .nav-link {
         font-family: 'Montserrat';
@@ -13,6 +15,7 @@
         margin-right: 20px;
         /* color: white; */
     }
+
     #header .nav-link:hover::after,
     #headerlayanankami .nav-link:hover::after {
         content: "";
@@ -24,6 +27,7 @@
         padding-bottom: 5px;
         margin-bottom: -7px;
     }
+
     #banner {
         background-color: #628BFC;
         color: white;
@@ -32,61 +36,73 @@
         padding-top: 25px;
         text-align: center;
     }
+
     #banner h1,
     #bannerlayanankami h1 {
         font-family: 'Raleway';
         font-size: 35px;
         font-weight: bold;
     }
+
     #banner p,
     #bannerlayanankami p {
         font-family: 'Montserrat';
         font-size: 15px;
     }
+
     #banner .btn-outline-light {
         width: 201px;
         height: auto;
     }
+
     /* untuk aksi berubah warna button */
     #banner .btn-outline-light:hover {
         width: 201px;
         height: auto;
         background: white;
     }
+
     #banner .img-banner {
         width: 300px;
         height: auto;
         padding-top: 30px;
     }
+
     #banner .visual1 {
         width: 100%;
         height: auto;
         padding-top: 85px;
     }
+
     #ongkir {
         /* untuk menaikkan keatas dibagian visual */
         margin-top: -110px;
     }
+
     #ongkir h1 {
         font-family: 'Raleway';
         font-weight: bold;
         font-size: 20px;
         padding-top: 20px;
     }
+
     #ongkir p {
         font-family: 'Montserrat';
         font-size: 15px;
     }
+
     #ongkir .form-control,
     #formyes .form-control {
         font-family: 'Montserrat';
         font-size: 15px;
     }
+
     #ongkir .btn-outline-warning {
         width: 155px;
         height: auto;
         color: #F8A70F;
     }
+
     /* untuk aksi berubah warna button */
     #ongkir .btn-outline-warning:hover {
         width: 155px;
@@ -94,6 +110,7 @@
         color: white;
         background: rgb(148, 122, 122);
     }
+
     #ongkir .btn-warning,
     #kerjasama .btn-warning,
     #timbangan .btn-warning,
@@ -106,6 +123,7 @@
         color: white;
         background: #F8A70F;
     }
+
     /* untuk aksi berubah warna button */
     #ongkir .btn-warning:hover,
     #kerjasama .btn-warning:hover,
@@ -120,10 +138,12 @@
         background: #F8A70F;
         background: rgb(148, 122, 122);
     }
+
     #ongkir .img-delivery {
         width: 339.8px;
         height: auto;
     }
+
     #ongkir .bg-ongkir {
         width: 100%;
         height: auto;
@@ -132,6 +152,7 @@
         border-radius: 20px;
         padding: 50px;
     }
+
     #kerjasama,
     #pengiriman {
         background-color: #F2F1F1;
@@ -141,6 +162,7 @@
         padding: 70px;
         text-align: center;
     }
+
     #kerjasama h1,
     #timbangan h1,
     #pengiriman h1,
@@ -150,6 +172,7 @@
         font-size: 25px;
         padding-top: 85px;
     }
+
     #kerjasama p,
     #timbangan p,
     #pengiriman p,
@@ -161,6 +184,7 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     #kerjasama .img-work,
     #timbangan .img-timbangan,
     #pengiriman .img-pengiriman,
@@ -169,12 +193,14 @@
         height: auto;
         padding-top: 40px;
     }
+
     #timbangan,
     #Pickup {
         margin-top: 30px;
         padding: 100px;
         text-align: center;
     }
+
     #ekspedisi {
         /* background: linear-gradient(89.42deg, #6C85C9 2.64%, #82D0E5 44.77%); */
         /* untuk gradien
@@ -183,27 +209,32 @@
         height: 700px;
         background-image: url(../Assets/img/bg-ekpedisi.png);
     }
+
     #ekspedisi h1 {
         font-family: 'Raleway';
         font-weight: bold;
         font-size: 40px;
         color: #FFFFFF;
     }
+
     #ekspedisi .btn-outline-light {
         width: 200px;
         height: auto;
         color: white;
         margin-top: 25px;
     }
+
     #ekspedisi .btn-outline-light:hover {
         color: black;
         width: 200px;
         height: auto;
     }
+
     #ekspedisi .text-ekspedisi {
         padding: 100px;
         margin-top: 80px;
     }
+
     #ratings .bg-ratings {
         margin-top: 20px;
         width: 100%;
@@ -213,18 +244,22 @@
         border-radius: 10px;
         padding: 50px;
     }
+
     #ratings {
         margin-top: 85px;
         text-align: center;
     }
+
     #ratings .content-rating {
         margin-top: 85px;
     }
+
     #ratings .bg-ratings h1 {
         font-family: 'Montserrat';
         font-weight: bold;
         font-size: 80px;
     }
+
     #footer {
         text-align: center;
         margin-top: 100px;
@@ -235,17 +270,20 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     #footer h1 {
         font-family: 'Montserrat';
         font-weight: bold;
         line-height: 35px;
         font-size: 20px;
     }
+
     /*akhir halaman pertama */
     /* halaman kedua */
     #headerlayanankami .navbar-expand-lg {
         background: #F8A70F;
     }
+
     #bannerlayanankami {
         background-color: #F8A70F;
         color: white;
@@ -254,17 +292,20 @@
         padding-top: 30px;
         text-align: center;
     }
+
     #bannerlayanankami .img-banner {
         padding-top: 20px;
         width: 420px;
         height: auto;
     }
+
     #yesdanreg {
         width: 100%;
         height: auto;
         padding-bottom: 85px;
         background: rgba(236, 235, 235, 0.7);
     }
+
     #yesdanreg .bg-yes {
         height: auto;
         width: 100%;
@@ -274,12 +315,14 @@
         border-radius: 10px;
         padding: 50px;
     }
+
     #yesdanreg h1 {
         font-family: 'Raleway';
         font-weight: bold;
         font-size: 15px;
         padding-top: 5px;
     }
+
     #yesdanreg p {
         font-family: 'Montserrat';
         font-style: normal;
@@ -287,11 +330,13 @@
         padding-top: 30px;
         padding-bottom: 25px;
     }
+
     #yesdanreg .img-yes {
         width: 110px;
         height: auto;
         padding-bottom: 5px;
     }
+
     #gambarlayanan .img-gambar {
         height: 300px;
         width: auto;
@@ -299,6 +344,7 @@
         z-index: -1;
         position: relative;
     }
+
     #footerlayanankami {
         text-align: center;
         background: #292525;
@@ -310,25 +356,30 @@
         margin-top: -170px;
         /* position: absolute; */
     }
+
     #footerlayanankami h1 {
         font-family: 'Montserrat';
         font-weight: bold;
         line-height: 35px;
         font-size: 20px;
     }
+
     /* akhir halaman kedua */
     /* Halaman yes */
     #formyes {
         margin-top: 50px;
     }
+
     #formyes h1 {
         font-family: 'Raleway';
         font-size: 25px;
     }
+
     #formyes p {
         font-family: 'Montserrat';
         font-size: 15px;
     }
+
     #formyes .bg-yes {
         background: #FFFFFF;
         box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
@@ -337,11 +388,13 @@
         margin-bottom: 50px;
         padding: 50px;
     }
+
     #formyes .btn-outline-warning {
         width: 170px;
         height: auto;
         color: #F8A70F;
     }
+
     /* untuk aksi berubah warna button */
     #formyes .btn-outline-warning:hover {
         width: 170px;
@@ -349,12 +402,14 @@
         color: white;
         background: rgb(148, 122, 122);
     }
+
     #formyes .btn-warning {
         width: 170px;
         height: auto;
         color: white;
         background: #F8A70F;
     }
+
     /* untuk aksi berubah warna button */
     #formyes .btn-warning:hover {
         width: 170px;
@@ -363,20 +418,24 @@
         background: #F8A70F;
         background: rgb(148, 122, 122);
     }
+
     /* akhir Halaman yes */
     /* halaman informasi */
     #informasi {
         margin-top: 50px;
     }
+
     #informasi .bg-informasi {
         padding: 150px;
         background: #E7E7E7;
         border-radius: 0px;
     }
+
     #informasi .img-informasi {
         height: 113px;
         width: auto;
     }
+
     /* akhir halaman informasi */
     #contact-us {
         margin-top: 85px;
