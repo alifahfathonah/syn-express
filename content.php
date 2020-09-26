@@ -30,6 +30,9 @@ switch ($halaman) {
     case 'login':
         include 'login.php';
         break;
+    case 'aksi-login':
+        include 'modul/aksi-login.php';
+        break;
     case 'register':
         include 'register.php';
         break;
