@@ -19,6 +19,11 @@
                                 <a class="nav-link" href="?page=home">Beranda </a>
                                 <a class="nav-link" href="?page=layanankami">Layanan Kami</a>
                                 <a class="nav-link" href="?page=contactus">Contact Us</a>
+                                <?php
+                                if (!isset($_SESSION['IdUser'])) {
+                                    echo '<a class="nav-link" href="?page=login">Login</a>';
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

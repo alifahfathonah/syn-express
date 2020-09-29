@@ -6,7 +6,7 @@ $password = $_POST['password'];
 $sql = "SELECT * FROM users WHERE email='$email'";
 $query = mysqli_query($konek, $sql);
 // $cekData   = mysqli_num_rows($query); //hasilnya kalo ada data berarti lebih dari 0
-$dataUsers = mysqli_fetch_assoc($query); //mengambil data users berdasarkan ema
+$dataUsers = mysqli_fetch_assoc($query); //mengambil data users berdasarkan email
 
 // var_dump($cekData);
 // die;
@@ -16,18 +16,33 @@ if (!empty($email) or !empty($password)) {
     if ($dataUsers !== null) {
         if ($password == $dataUsers['password']) {
             if ($dataUsers['status'] == 'Aktif') {
-                echo "<script>alert('Berhasil Login')</script>";
+                notif("Berhasil Login", "success");
+                if ($_POST['rememberme'] == 'on') {
+                    setcookie('login', $dataUsers['id_user'], time() + 120);
+                }
+
+                $_SESSION['IdUser']   = $dataUsers['id_user'];
+                $_SESSION['Email']    = $dataUsers['email'];
+                $_SESSION['Username'] = $dataUsers['username'];
+                $_SESSION['Status']   = $dataUsers['status'];
+                $_SESSION['Level']    = $dataUsers['level'];
+                $_SESSION['LoginAt']  = $dataUsers['login_at'];
+
+                header("Location: index.php");
             } else {
-                echo "<script>alert('Akun tidak aktif. Silakan hubungi admin')</script>";
+                notif("Akun tidak aktif. Silakan hubungi admin", "warning");
+                header("Location: ?page=login");
             }
         } else {
-            echo "<script>alert('Password tidak valid')</script>";
+            notif("Password tidak valid", "danger");
+            header("Location: ?page=login");
         }
     } else {
-        echo "<script>alert('Email tidak valid')</script>";
+        notif("Email tidak valid", "danger");
+        header("Location: ?page=login");
     }
 } else {
-    echo "<script>alert('Email atau password harap diisi terlebih dahulu')</script>";
+    notif("Email atau password harap diisi terlebih dahulu", "danger");
 }
 
 
