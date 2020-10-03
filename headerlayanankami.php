@@ -19,9 +19,12 @@
                              <a class="nav-link" href="?page=home">Beranda </a>
                              <a class="nav-link" href="?page=layanankami">Layanan Kami</a>
                              <a class="nav-link" href="?page=contactus">Contact Us</a>
+                             <!-- //KONDISI SEBELUM DAN SESUDAH LOGIN -->
                              <?php
                                 if (!isset($_SESSION['IdUser'])) {
                                     echo '<a class="nav-link" href="?page=login">Login</a>';
+                                } else {
+                                    echo '<a class="nav-link" href="logout.php">Logout</a>';
                                 }
                                 ?>
                          </div>
