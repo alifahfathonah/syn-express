@@ -1,3 +1,6 @@
+<br>
+<a href="?page=tambah" type="button" class="btn btn-primary <?= isset($_GET['page']) ? $_GET['page'] == 'tambah' ? 'active' : '' : '' ?>">Tambah Data User</a><br><br>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -32,7 +35,7 @@
                 <td><?= $data['status'] ?></td>
                 <td><?= $data['login_at'] ?></td>
                 <td>
-                    <a href="#" class="btn btn-sm btn-info">Edit</a>
+                    <a href="?page=update" class="btn btn-sm btn-info <?= isset($_GET['page']) ? $_GET['page'] == 'update' ? 'active' : '' : '' ?>">Edit</a>
                     <a href="#" class="btn btn-sm btn-danger">Delete</a>
                 </td>
             </tr>

@@ -11,6 +11,14 @@ switch ($halaman) {
         include 'view/users.php';
         break;
 
+    case 'tambah':
+        include 'view/tambah.php';
+        break;
+
+    case 'update':
+        include 'view/update.php';
+        break;
+
     default:
         echo "HALAMAN TIDAK DITEMUKAN";
         break;
