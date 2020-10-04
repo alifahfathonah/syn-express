@@ -1,5 +1,7 @@
-<br>
-<a href="?page=tambah" type="button" class="btn btn-primary <?= isset($_GET['page']) ? $_GET['page'] == 'tambah' ? 'active' : '' : '' ?>">Tambah Data User</a><br><br>
+<h1>Data Users
+    <a href="?page=add-users" class="btn btn-outline-info float-right">Tambah Users</a>
+</h1>
+<?= tampilNotif() ?>
 
 <table class="table table-striped">
     <thead>
@@ -35,8 +37,8 @@
                 <td><?= $data['status'] ?></td>
                 <td><?= $data['login_at'] ?></td>
                 <td>
-                    <a href="?page=update" class="btn btn-sm btn-info <?= isset($_GET['page']) ? $_GET['page'] == 'update' ? 'active' : '' : '' ?>">Edit</a>
-                    <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                    <a href="?page=upd-users&id=<?= $data['id_user'] ?>" class="btn btn-sm btn-info">Edit</a>
+                    <a href="?page=act-users&aksi=delete&id=<?= $data['id_user'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ?')">Delete</a>
                 </td>
             </tr>
         <?php endwhile ?>

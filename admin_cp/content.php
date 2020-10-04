@@ -11,12 +11,18 @@ switch ($halaman) {
         include 'view/users.php';
         break;
 
-    case 'tambah':
-        include 'view/tambah.php';
+    case 'add-users':
+        include 'view/add-form/add-users.php';
         break;
 
-    case 'update':
-        include 'view/update.php';
+    case 'upd-users':
+        include 'view/upd-form/upd-users.php';
+        break;
+
+
+        // aksi form
+    case 'act-users':
+        include 'modul/act-users.php';
         break;
 
     default:
