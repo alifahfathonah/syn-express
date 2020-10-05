@@ -7,6 +7,7 @@ $sql = "SELECT * FROM users WHERE email='$email'";
 $query = mysqli_query($konek, $sql);
 // $cekData   = mysqli_num_rows($query); //hasilnya kalo ada data berarti lebih dari 0
 $dataUsers = mysqli_fetch_assoc($query); //mengambil data users berdasarkan email
+$dataid = $dataUsers['id_user']; //mengambil berdasarkan id didalam datauser di tabel user
 
 // var_dump($cekData);
 // die;
@@ -27,6 +28,10 @@ if (!empty($email) or !empty($password)) {
                 $_SESSION['Status']   = $dataUsers['status'];
                 $_SESSION['Level']    = $dataUsers['level'];
                 $_SESSION['LoginAt']  = $dataUsers['login_at'];
+
+                //update data user melalui id user
+                $sqluser = "UPDATE `users` SET `login_at`=CURRENT_TIMESTAMP() WHERE id_user='$dataid'";
+                $queryUsers = mysqli_query($konek, $sqluser) or die(mysqli_errno($konek));
 
                 header("Location: index.php");
             } else {
